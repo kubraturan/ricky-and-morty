@@ -8,7 +8,7 @@ import { useAppContext } from "@providers/index";
 import '@styles/App.css'
 
 const App: React.FC = () => {
-  const { outsideClickRef, scrollRef } = useSearchAndMultiSelect();
+  const { outsideClickRef } = useSearchAndMultiSelect();
   const {
     textSearchHighlighterWord,
     showCharacters,
@@ -34,7 +34,6 @@ const App: React.FC = () => {
               setShowCharacters(true);
             }} 
             removeSelectedCharacter={removeSelectedCharacter}
-            ref={scrollRef}
           />
           <PopupContent/> 
         </div>

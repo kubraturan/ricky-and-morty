@@ -1,18 +1,20 @@
 import React, { ForwardedRef } from "react";
 import SelectedCharacterItem from "@components/SelectedCharacterList/SelectedCharacterItem";
+import { useSearchAndMultiSelect } from "@hooks/useSearchAndMultiSelect";
 
 interface SelectedCharacterListProps {
   selectedCharacterList: string[];
   removeSelectedCharacter: (characterId: string) => void;
-  forwardRef: ForwardedRef<HTMLLIElement>;
+  forwardRef?: ForwardedRef<HTMLLIElement>;
 }
 
 const SelectedCharacterList: React.FC<SelectedCharacterListProps> = React.forwardRef<HTMLLIElement, SelectedCharacterListProps>(
   ({ 
     selectedCharacterList, 
     removeSelectedCharacter 
-  }, ref) => {
+  }) => {
 
+  const { scrollRef } = useSearchAndMultiSelect();
   return (
     selectedCharacterList.length > 0 && (
       <ul className="popup-content-character-list">
@@ -25,7 +27,7 @@ const SelectedCharacterList: React.FC<SelectedCharacterListProps> = React.forwar
             />
           ))
         }
-        <li ref={ref} />
+        <li ref={scrollRef} />
       </ul>
     )
   )

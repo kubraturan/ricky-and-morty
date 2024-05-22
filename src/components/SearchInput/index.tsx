@@ -22,15 +22,13 @@ const SearchInput = React.forwardRef<HTMLLIElement, SearchInputProps>(
     onChange,
     onFocus,
     removeSelectedCharacter
-    }, ref
-  ) => {
+    } ) => {
 
     return (
       <div className="popup-content-input-container">
         <SelectedCharacterList 
           selectedCharacterList={selectedCharacterList} 
           removeSelectedCharacter={removeSelectedCharacter} 
-          forwardRef={ref} 
         />
         <input
           type="text"
