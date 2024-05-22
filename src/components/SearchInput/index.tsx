@@ -30,7 +30,7 @@ const SearchInput = React.forwardRef<HTMLLIElement, SearchInputProps>(
         <SelectedCharacterList 
           selectedCharacterList={selectedCharacterList} 
           removeSelectedCharacter={removeSelectedCharacter} 
-          ref={ref} 
+          forwardRef={ref} 
         />
         <input
           type="text"
