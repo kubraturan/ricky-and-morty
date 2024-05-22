@@ -5,25 +5,25 @@ This project includes a React TypeScript application built with Vite. It has bee
 
   
 
-- [x] Using React vs Typescript
+- ✅ Using React vs Typescript
 
-- [x] implement multi-select
+- ✅ implement multi-select
 
-- [x] Querying the API with the query written in the input field and ensuring that it is listed in the popup content
+- ✅ Querying the API with the query written in the input field and ensuring that it is listed in the popup content
 
-- [x] In the listed results, the character's picture, name and information about how many episodes he played in are displayed for each character.
+- ✅ In the listed results, the character's picture, name and information about how many episodes he played in are displayed for each character.
 
-- [x] Highlighting the word typed for query in the results listed (in the example design, 'Ric' is shown in bold in the results of the search for 'ric')
+- ✅ Highlighting the word typed for query in the results listed (in the example design, 'Ric' is shown in bold in the results of the search for 'ric')
 
-- [x] adding and subtracting the selected results to the input field
+- ✅ adding and subtracting the selected results to the input field
 
-- [x] Keyboard navigation support
+- ✅ Keyboard navigation support
 
-- [x] All operations should be possible using the arrow keys and tabs, selected items in the input field or lines in the result list should be navigated, and deletion/selection operations should be possible.
+- ✅ All operations should be possible using the arrow keys and tabs, selected items in the input field or lines in the result list should be navigated, and deletion/selection operations should be possible.
 
-- [x] Loading state display
+- ✅ Loading state display
 
-- [x] Displaying exception handling and error states on the interface
+- ✅ Displaying exception handling and error states on the interface
 
   
 
@@ -61,14 +61,14 @@ cd  ricky-and-morty
 
   
 
-3. Install Dependencies
+3. Install and Run Dependencies
 
-Once inside the project directory, install the project dependencies using npm:
-
+Once in the project directory, install the project dependencies using npm:
   
 
 ```bash
 
 npm  install
+npm run dev
 
 ```
