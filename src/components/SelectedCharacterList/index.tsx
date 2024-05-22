@@ -4,7 +4,7 @@ import SelectedCharacterItem from "@components/SelectedCharacterList/SelectedCha
 interface SelectedCharacterListProps {
   selectedCharacterList: string[];
   removeSelectedCharacter: (characterId: string) => void;
-  ref: ForwardedRef<HTMLLIElement>;
+  forwardRef: ForwardedRef<HTMLLIElement>;
 }
 
 const SelectedCharacterList: React.FC<SelectedCharacterListProps> = React.forwardRef<HTMLLIElement, SelectedCharacterListProps>(
